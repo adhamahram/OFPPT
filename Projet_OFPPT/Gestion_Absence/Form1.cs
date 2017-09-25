@@ -165,7 +165,7 @@ namespace Gestion_Absence
         private void Header_Panel_Paint(object sender, PaintEventArgs e)
         {
 
-
+            
         }
     }
 }
