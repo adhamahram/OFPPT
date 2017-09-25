@@ -21,7 +21,7 @@ namespace Gestion_Absence
         {
 
 
-            //mini_logo.Visible = false;
+            //mini_lo
             //statu = 0;
             
         }
@@ -164,7 +164,6 @@ namespace Gestion_Absence
 
         private void Header_Panel_Paint(object sender, PaintEventArgs e)
         {
-
             
         }
     }
