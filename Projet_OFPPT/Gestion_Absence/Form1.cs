@@ -118,6 +118,7 @@ namespace Gestion_Absence
                 Tree_Menu_panel.Width += 20;
                 timer2.Start();
                 tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
+
             }
             else
             {
