@@ -35,22 +35,10 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Title_Lable = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Header_Panel = new System.Windows.Forms.Panel();
-            this.Minimise_pictureBox = new System.Windows.Forms.PictureBox();
-            this.Maximise_pictureBox = new System.Windows.Forms.PictureBox();
-            this.Close_pictureBox = new System.Windows.Forms.PictureBox();
-            this.Humbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Logo_Panel = new System.Windows.Forms.Panel();
             this.mini_logo = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
             this.Tree_Menu_panel = new System.Windows.Forms.Panel();
-            this.btn_stat = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_modul = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_stagi = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_arch = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_group = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_filieres = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_abs = new Bunifu.Framework.UI.BunifuFlatButton();
             this.logo_animator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -61,16 +49,28 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btn_stat = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_modul = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_stagi = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_arch = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_group = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_filieres = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_abs = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
+            this.Minimise_pictureBox = new System.Windows.Forms.PictureBox();
+            this.Maximise_pictureBox = new System.Windows.Forms.PictureBox();
+            this.Close_pictureBox = new System.Windows.Forms.PictureBox();
+            this.Humbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.Header_Panel.SuspendLayout();
+            this.Logo_Panel.SuspendLayout();
+            this.Tree_Menu_panel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Humbutton)).BeginInit();
-            this.Logo_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
-            this.Tree_Menu_panel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -108,62 +108,6 @@
             this.Header_Panel.TabIndex = 4;
             this.Header_Panel.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Header_Panel_MouseDoubleClick);
             // 
-            // Minimise_pictureBox
-            // 
-            this.logo_animator.SetDecoration(this.Minimise_pictureBox, BunifuAnimatorNS.DecorationType.None);
-            this.Tree_Menu_panel_animator.SetDecoration(this.Minimise_pictureBox, BunifuAnimatorNS.DecorationType.None);
-            this.Minimise_pictureBox.Image = global::Gestion_Absence.Properties.Resources.Reduire;
-            this.Minimise_pictureBox.Location = new System.Drawing.Point(865, 27);
-            this.Minimise_pictureBox.Name = "Minimise_pictureBox";
-            this.Minimise_pictureBox.Size = new System.Drawing.Size(16, 16);
-            this.Minimise_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Minimise_pictureBox.TabIndex = 4;
-            this.Minimise_pictureBox.TabStop = false;
-            this.Minimise_pictureBox.Click += new System.EventHandler(this.Minimise_pictureBox_Click);
-            // 
-            // Maximise_pictureBox
-            // 
-            this.logo_animator.SetDecoration(this.Maximise_pictureBox, BunifuAnimatorNS.DecorationType.None);
-            this.Tree_Menu_panel_animator.SetDecoration(this.Maximise_pictureBox, BunifuAnimatorNS.DecorationType.None);
-            this.Maximise_pictureBox.Image = global::Gestion_Absence.Properties.Resources.Agrendire;
-            this.Maximise_pictureBox.Location = new System.Drawing.Point(897, 21);
-            this.Maximise_pictureBox.Name = "Maximise_pictureBox";
-            this.Maximise_pictureBox.Size = new System.Drawing.Size(16, 16);
-            this.Maximise_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Maximise_pictureBox.TabIndex = 3;
-            this.Maximise_pictureBox.TabStop = false;
-            this.Maximise_pictureBox.Click += new System.EventHandler(this.Maximise_pictureBox_Click);
-            // 
-            // Close_pictureBox
-            // 
-            this.logo_animator.SetDecoration(this.Close_pictureBox, BunifuAnimatorNS.DecorationType.None);
-            this.Tree_Menu_panel_animator.SetDecoration(this.Close_pictureBox, BunifuAnimatorNS.DecorationType.None);
-            this.Close_pictureBox.Image = global::Gestion_Absence.Properties.Resources.Close;
-            this.Close_pictureBox.Location = new System.Drawing.Point(930, 21);
-            this.Close_pictureBox.Name = "Close_pictureBox";
-            this.Close_pictureBox.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
-            this.Close_pictureBox.Size = new System.Drawing.Size(16, 16);
-            this.Close_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Close_pictureBox.TabIndex = 2;
-            this.Close_pictureBox.TabStop = false;
-            this.Close_pictureBox.Click += new System.EventHandler(this.Close_pictureBox_Click);
-            // 
-            // Humbutton
-            // 
-            this.Humbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Tree_Menu_panel_animator.SetDecoration(this.Humbutton, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.Humbutton, BunifuAnimatorNS.DecorationType.None);
-            this.Humbutton.Image = global::Gestion_Absence.Properties.Resources.menu;
-            this.Humbutton.ImageActive = null;
-            this.Humbutton.Location = new System.Drawing.Point(17, 13);
-            this.Humbutton.Name = "Humbutton";
-            this.Humbutton.Size = new System.Drawing.Size(25, 25);
-            this.Humbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Humbutton.TabIndex = 0;
-            this.Humbutton.TabStop = false;
-            this.Humbutton.Zoom = 10;
-            this.Humbutton.Click += new System.EventHandler(this.Humbutton_Click);
-            // 
             // bunifuDragControl1
             // 
             this.bunifuDragControl1.Fixed = true;
@@ -199,18 +143,6 @@
             this.mini_logo.Text = "OFPPT";
             this.mini_logo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Logo_PictureBox
-            // 
-            this.logo_animator.SetDecoration(this.Logo_PictureBox, BunifuAnimatorNS.DecorationType.None);
-            this.Tree_Menu_panel_animator.SetDecoration(this.Logo_PictureBox, BunifuAnimatorNS.DecorationType.None);
-            this.Logo_PictureBox.Image = global::Gestion_Absence.Properties.Resources.OFPPT;
-            this.Logo_PictureBox.Location = new System.Drawing.Point(17, 34);
-            this.Logo_PictureBox.Name = "Logo_PictureBox";
-            this.Logo_PictureBox.Size = new System.Drawing.Size(227, 123);
-            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo_PictureBox.TabIndex = 0;
-            this.Logo_PictureBox.TabStop = false;
-            // 
             // Tree_Menu_panel
             // 
             this.Tree_Menu_panel.BackColor = System.Drawing.Color.White;
@@ -230,6 +162,132 @@
             this.Tree_Menu_panel.Size = new System.Drawing.Size(257, 575);
             this.Tree_Menu_panel.TabIndex = 5;
             // 
+            // logo_animator
+            // 
+            this.logo_animator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
+            this.logo_animator.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(30);
+            animation2.RotateCoeff = 0.5F;
+            animation2.RotateLimit = 0.2F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.logo_animator.DefaultAnimation = animation2;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tabControl1);
+            this.Tree_Menu_panel_animator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(257, 54);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(701, 575);
+            this.panel1.TabIndex = 6;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(701, 575);
+            this.tabControl1.TabIndex = 1;
+            // 
+            // tabPage4
+            // 
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(693, 549);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // Tree_Menu_panel_animator
+            // 
+            this.Tree_Menu_panel_animator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.Tree_Menu_panel_animator.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.Tree_Menu_panel_animator.DefaultAnimation = animation1;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 10;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // tabPage3
+            // 
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(693, 549);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(693, 549);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage1
+            // 
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(693, 549);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
             // btn_stat
             // 
             this.btn_stat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(86)))));
@@ -243,7 +301,7 @@
             this.btn_stat.DisabledColor = System.Drawing.Color.Gray;
             this.btn_stat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
             this.btn_stat.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_stat.Iconimage = global::Gestion_Absence.Properties.Resources.Student1;
+            this.btn_stat.Iconimage = global::Gestion_Absence.Properties.Resources.statistic;
             this.btn_stat.Iconimage_right = null;
             this.btn_stat.Iconimage_right_Selected = null;
             this.btn_stat.Iconimage_Selected = null;
@@ -489,131 +547,73 @@
             this.btn_abs.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
             this.btn_abs.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // logo_animator
+            // Logo_PictureBox
             // 
-            this.logo_animator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
-            this.logo_animator.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(30);
-            animation2.RotateCoeff = 0.5F;
-            animation2.RotateLimit = 0.2F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.logo_animator.DefaultAnimation = animation2;
+            this.logo_animator.SetDecoration(this.Logo_PictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Tree_Menu_panel_animator.SetDecoration(this.Logo_PictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Logo_PictureBox.Image = global::Gestion_Absence.Properties.Resources.OFPPT;
+            this.Logo_PictureBox.Location = new System.Drawing.Point(17, 34);
+            this.Logo_PictureBox.Name = "Logo_PictureBox";
+            this.Logo_PictureBox.Size = new System.Drawing.Size(227, 123);
+            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo_PictureBox.TabIndex = 0;
+            this.Logo_PictureBox.TabStop = false;
             // 
-            // panel1
+            // Minimise_pictureBox
             // 
-            this.panel1.Controls.Add(this.tabControl1);
-            this.Tree_Menu_panel_animator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(257, 54);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(701, 575);
-            this.panel1.TabIndex = 6;
+            this.logo_animator.SetDecoration(this.Minimise_pictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Tree_Menu_panel_animator.SetDecoration(this.Minimise_pictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Minimise_pictureBox.Image = global::Gestion_Absence.Properties.Resources.Reduire;
+            this.Minimise_pictureBox.Location = new System.Drawing.Point(865, 27);
+            this.Minimise_pictureBox.Name = "Minimise_pictureBox";
+            this.Minimise_pictureBox.Size = new System.Drawing.Size(16, 16);
+            this.Minimise_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Minimise_pictureBox.TabIndex = 4;
+            this.Minimise_pictureBox.TabStop = false;
+            this.Minimise_pictureBox.Click += new System.EventHandler(this.Minimise_pictureBox_Click);
             // 
-            // tabControl1
+            // Maximise_pictureBox
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(701, 575);
-            this.tabControl1.TabIndex = 1;
+            this.logo_animator.SetDecoration(this.Maximise_pictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Tree_Menu_panel_animator.SetDecoration(this.Maximise_pictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Maximise_pictureBox.Image = global::Gestion_Absence.Properties.Resources.Agrendire;
+            this.Maximise_pictureBox.Location = new System.Drawing.Point(897, 21);
+            this.Maximise_pictureBox.Name = "Maximise_pictureBox";
+            this.Maximise_pictureBox.Size = new System.Drawing.Size(16, 16);
+            this.Maximise_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Maximise_pictureBox.TabIndex = 3;
+            this.Maximise_pictureBox.TabStop = false;
+            this.Maximise_pictureBox.Click += new System.EventHandler(this.Maximise_pictureBox_Click);
             // 
-            // tabPage4
+            // Close_pictureBox
             // 
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(693, 549);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.logo_animator.SetDecoration(this.Close_pictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Tree_Menu_panel_animator.SetDecoration(this.Close_pictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Close_pictureBox.Image = global::Gestion_Absence.Properties.Resources.Close;
+            this.Close_pictureBox.Location = new System.Drawing.Point(930, 21);
+            this.Close_pictureBox.Name = "Close_pictureBox";
+            this.Close_pictureBox.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
+            this.Close_pictureBox.Size = new System.Drawing.Size(16, 16);
+            this.Close_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Close_pictureBox.TabIndex = 2;
+            this.Close_pictureBox.TabStop = false;
+            this.Close_pictureBox.Click += new System.EventHandler(this.Close_pictureBox_Click);
             // 
-            // Tree_Menu_panel_animator
+            // Humbutton
             // 
-            this.Tree_Menu_panel_animator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.Tree_Menu_panel_animator.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.Tree_Menu_panel_animator.DefaultAnimation = animation1;
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 10;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timer2
-            // 
-            this.timer2.Interval = 10;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // tabPage3
-            // 
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(693, 549);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(693, 549);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage1
-            // 
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(693, 549);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.Humbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Tree_Menu_panel_animator.SetDecoration(this.Humbutton, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.Humbutton, BunifuAnimatorNS.DecorationType.None);
+            this.Humbutton.Image = global::Gestion_Absence.Properties.Resources.menu;
+            this.Humbutton.ImageActive = null;
+            this.Humbutton.Location = new System.Drawing.Point(17, 13);
+            this.Humbutton.Name = "Humbutton";
+            this.Humbutton.Size = new System.Drawing.Size(25, 25);
+            this.Humbutton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Humbutton.TabIndex = 0;
+            this.Humbutton.TabStop = false;
+            this.Humbutton.Zoom = 10;
+            this.Humbutton.Click += new System.EventHandler(this.Humbutton_Click);
             // 
             // Form1
             // 
@@ -631,15 +631,15 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Header_Panel.ResumeLayout(false);
             this.Header_Panel.PerformLayout();
+            this.Logo_Panel.ResumeLayout(false);
+            this.Tree_Menu_panel.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Close_pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Humbutton)).EndInit();
-            this.Logo_Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
-            this.Tree_Menu_panel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
