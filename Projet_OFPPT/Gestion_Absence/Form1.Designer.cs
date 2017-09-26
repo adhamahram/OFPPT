@@ -54,13 +54,13 @@
             this.logo_animator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.Tree_Menu_panel_animator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Header_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).BeginInit();
@@ -259,7 +259,7 @@
             this.btn_stat.Normalcolor = System.Drawing.Color.White;
             this.btn_stat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_stat.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_stat.selected = true;
+            this.btn_stat.selected = false;
             this.btn_stat.Size = new System.Drawing.Size(258, 48);
             this.btn_stat.TabIndex = 14;
             this.btn_stat.Text = "          Statistique";
@@ -296,7 +296,7 @@
             this.btn_modul.Normalcolor = System.Drawing.Color.White;
             this.btn_modul.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_modul.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_modul.selected = true;
+            this.btn_modul.selected = false;
             this.btn_modul.Size = new System.Drawing.Size(258, 48);
             this.btn_modul.TabIndex = 11;
             this.btn_modul.Text = "        Modules";
@@ -333,7 +333,7 @@
             this.btn_stagi.Normalcolor = System.Drawing.Color.White;
             this.btn_stagi.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_stagi.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_stagi.selected = true;
+            this.btn_stagi.selected = false;
             this.btn_stagi.Size = new System.Drawing.Size(258, 48);
             this.btn_stagi.TabIndex = 13;
             this.btn_stagi.Text = "          Stagiaires";
@@ -370,7 +370,7 @@
             this.btn_arch.Normalcolor = System.Drawing.Color.White;
             this.btn_arch.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_arch.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_arch.selected = true;
+            this.btn_arch.selected = false;
             this.btn_arch.Size = new System.Drawing.Size(258, 48);
             this.btn_arch.TabIndex = 12;
             this.btn_arch.Text = "        Archive";
@@ -407,7 +407,7 @@
             this.btn_group.Normalcolor = System.Drawing.Color.White;
             this.btn_group.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_group.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_group.selected = true;
+            this.btn_group.selected = false;
             this.btn_group.Size = new System.Drawing.Size(258, 48);
             this.btn_group.TabIndex = 10;
             this.btn_group.Text = "         Groupes";
@@ -444,7 +444,7 @@
             this.btn_filieres.Normalcolor = System.Drawing.Color.White;
             this.btn_filieres.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_filieres.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_filieres.selected = true;
+            this.btn_filieres.selected = false;
             this.btn_filieres.Size = new System.Drawing.Size(258, 48);
             this.btn_filieres.TabIndex = 9;
             this.btn_filieres.Text = "         Filières";
@@ -481,7 +481,7 @@
             this.btn_abs.Normalcolor = System.Drawing.Color.White;
             this.btn_abs.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_abs.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_abs.selected = true;
+            this.btn_abs.selected = false;
             this.btn_abs.Size = new System.Drawing.Size(258, 48);
             this.btn_abs.TabIndex = 8;
             this.btn_abs.Text = "         Absence";
@@ -536,42 +536,6 @@
             this.tabControl1.Size = new System.Drawing.Size(701, 575);
             this.tabControl1.TabIndex = 1;
             // 
-            // tabPage1
-            // 
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(693, 549);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(693, 549);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(693, 549);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // tabPage4
             // 
             this.Tree_Menu_panel_animator.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
@@ -614,6 +578,42 @@
             // 
             this.timer2.Interval = 10;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // tabPage3
+            // 
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabPage3, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(693, 549);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(693, 549);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage1
+            // 
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(693, 549);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -669,12 +669,12 @@
         private Bunifu.Framework.UI.BunifuCustomLabel mini_logo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }
 
