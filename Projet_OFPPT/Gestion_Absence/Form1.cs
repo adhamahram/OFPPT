@@ -19,7 +19,8 @@ namespace Gestion_Absence
         int statu;
         private void Form1_Load(object sender, EventArgs e)
         {
-           mini_logo.Visible = false;
+            tabControl1.ItemSize = new Size(tabControl1.Width / 2 -1, tabControl1.ItemSize.Height);
+            mini_logo.Visible = false;
            statu = 0;
             
         }
@@ -61,6 +62,7 @@ namespace Gestion_Absence
                 timer1.Start();
                 Tree_Menu_panel_animator.HideSync(Logo_PictureBox);
                 Logo_PictureBox.Visible = false;
+                
                 mini_logo.Location = new Point(12, 34);
                 mini_logo.Visible = true;
             }
@@ -70,8 +72,8 @@ namespace Gestion_Absence
                 mini_logo.Visible = false;
                 Logo_PictureBox.Visible = false;
                 logo_animator.ShowSync(Logo_PictureBox,false,null);
+                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
             }
-
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -79,6 +81,7 @@ namespace Gestion_Absence
             {
                 Tree_Menu_panel.Width -= 20;
                 timer1.Start();
+                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
             }
             else
             {
@@ -124,6 +127,8 @@ namespace Gestion_Absence
             {
                 Tree_Menu_panel.Width += 20;
                 timer2.Start();
+                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
+
             }
             else
             {
