@@ -41,7 +41,7 @@ namespace Gestion_Absence
                 Maximise_pictureBox.Location = new Point(Maximise_pictureBox.Location.X + 410, Maximise_pictureBox.Location.Y);
                 Close_pictureBox.Location = new Point(Close_pictureBox.Location.X + 410, Close_pictureBox.Location.Y);
                 Minimise_pictureBox.Location = new Point(Minimise_pictureBox.Location.X + 410, Minimise_pictureBox.Location.Y);
-
+                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
             }
             else
             {
@@ -51,6 +51,7 @@ namespace Gestion_Absence
                 this.Width = 958;
                 this.Height = 631;
                 this.CenterToScreen();
+                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
                 statu = 0;
             }
         }
@@ -62,7 +63,6 @@ namespace Gestion_Absence
                 timer1.Start();
                 Tree_Menu_panel_animator.HideSync(Logo_PictureBox);
                 Logo_PictureBox.Visible = false;
-                
                 mini_logo.Location = new Point(12, 34);
                 mini_logo.Visible = true;
             }
@@ -72,22 +72,9 @@ namespace Gestion_Absence
                 mini_logo.Visible = false;
                 Logo_PictureBox.Visible = false;
                 logo_animator.ShowSync(Logo_PictureBox,false,null);
-                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
             }
         }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (Tree_Menu_panel.Width > 63)
-            {
-                Tree_Menu_panel.Width -= 20;
-                timer1.Start();
-                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
-            }
-            else
-            {
-                timer1.Stop();   
-            }
-        }
+
 
         private void Header_Panel_MouseDoubleClick(object sender, MouseEventArgs e)
         {
@@ -101,7 +88,7 @@ namespace Gestion_Absence
                 Maximise_pictureBox.Location = new Point(Maximise_pictureBox.Location.X + 410, Maximise_pictureBox.Location.Y);
                 Close_pictureBox.Location = new Point(Close_pictureBox.Location.X + 410, Close_pictureBox.Location.Y);
                 Minimise_pictureBox.Location = new Point(Minimise_pictureBox.Location.X + 410, Minimise_pictureBox.Location.Y);
-
+                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
             }
             else
             {
@@ -111,6 +98,8 @@ namespace Gestion_Absence
                 this.Width = 958;
                 this.Height = 631;
                 this.CenterToScreen();
+                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
+
                 statu = 0;
             }
 
@@ -128,11 +117,23 @@ namespace Gestion_Absence
                 Tree_Menu_panel.Width += 20;
                 timer2.Start();
                 tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
-
             }
             else
             {
                 timer2.Stop();
+            }
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Tree_Menu_panel.Width > 63)
+            {
+                Tree_Menu_panel.Width -= 20;
+                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
+                timer1.Start();
+            }
+            else
+            {
+                timer1.Stop();
             }
         }
     }

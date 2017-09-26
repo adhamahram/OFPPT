@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation12 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation11 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Title_Lable = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Header_Panel = new System.Windows.Forms.Panel();
@@ -52,13 +52,12 @@
             this.btn_filieres = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_abs = new Bunifu.Framework.UI.BunifuFlatButton();
             this.logo_animator = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Tree_Menu_panel_animator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Gestion_des_stagiaires_tab = new System.Windows.Forms.TabPage();
             this.Header_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).BeginInit();
@@ -67,7 +66,6 @@
             this.Logo_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             this.Tree_Menu_panel.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -172,8 +170,8 @@
             // Logo_Panel
             // 
             this.Logo_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.Logo_Panel.Controls.Add(this.mini_logo);
             this.Logo_Panel.Controls.Add(this.Logo_PictureBox);
+            this.Logo_Panel.Controls.Add(this.mini_logo);
             this.Tree_Menu_panel_animator.SetDecoration(this.Logo_Panel, BunifuAnimatorNS.DecorationType.None);
             this.logo_animator.SetDecoration(this.Logo_Panel, BunifuAnimatorNS.DecorationType.None);
             this.Logo_Panel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -201,7 +199,9 @@
             // 
             this.logo_animator.SetDecoration(this.Logo_PictureBox, BunifuAnimatorNS.DecorationType.None);
             this.Tree_Menu_panel_animator.SetDecoration(this.Logo_PictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Logo_PictureBox.ErrorImage = null;
             this.Logo_PictureBox.Image = global::Gestion_Absence.Properties.Resources.OFPPT;
+            this.Logo_PictureBox.InitialImage = null;
             this.Logo_PictureBox.Location = new System.Drawing.Point(17, 34);
             this.Logo_PictureBox.Name = "Logo_PictureBox";
             this.Logo_PictureBox.Size = new System.Drawing.Size(227, 123);
@@ -226,7 +226,7 @@
             this.Tree_Menu_panel.Location = new System.Drawing.Point(0, 54);
             this.Tree_Menu_panel.Name = "Tree_Menu_panel";
             this.Tree_Menu_panel.Size = new System.Drawing.Size(257, 575);
-            this.Tree_Menu_panel.TabIndex = 5;
+            this.Tree_Menu_panel.TabIndex = 1;
             // 
             // btn_stat
             // 
@@ -491,81 +491,43 @@
             // 
             this.logo_animator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
             this.logo_animator.Cursor = null;
-            animation12.AnimateOnlyDifferences = true;
-            animation12.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.BlindCoeff")));
-            animation12.LeafCoeff = 0F;
-            animation12.MaxTime = 1F;
-            animation12.MinTime = 0F;
-            animation12.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicCoeff")));
-            animation12.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicShift")));
-            animation12.MosaicSize = 0;
-            animation12.Padding = new System.Windows.Forms.Padding(30);
-            animation12.RotateCoeff = 0.5F;
-            animation12.RotateLimit = 0.2F;
-            animation12.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.ScaleCoeff")));
-            animation12.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.SlideCoeff")));
-            animation12.TimeCoeff = 0F;
-            animation12.TransparencyCoeff = 0F;
-            this.logo_animator.DefaultAnimation = animation12;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.tabControl1);
-            this.Tree_Menu_panel_animator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(257, 54);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(701, 575);
-            this.panel1.TabIndex = 6;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.ItemSize = new System.Drawing.Size(200, 18);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(701, 575);
-            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl1.TabIndex = 1;
-            // 
-            // tabPage1
-            // 
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(693, 549);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(30);
+            animation3.RotateCoeff = 0.5F;
+            animation3.RotateLimit = 0.2F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.logo_animator.DefaultAnimation = animation3;
             // 
             // Tree_Menu_panel_animator
             // 
             this.Tree_Menu_panel_animator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.Tree_Menu_panel_animator.Cursor = null;
-            animation11.AnimateOnlyDifferences = true;
-            animation11.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.BlindCoeff")));
-            animation11.LeafCoeff = 0F;
-            animation11.MaxTime = 1F;
-            animation11.MinTime = 0F;
-            animation11.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicCoeff")));
-            animation11.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicShift")));
-            animation11.MosaicSize = 0;
-            animation11.Padding = new System.Windows.Forms.Padding(0);
-            animation11.RotateCoeff = 0F;
-            animation11.RotateLimit = 0F;
-            animation11.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.ScaleCoeff")));
-            animation11.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.SlideCoeff")));
-            animation11.TimeCoeff = 0F;
-            animation11.TransparencyCoeff = 0F;
-            this.Tree_Menu_panel_animator.DefaultAnimation = animation11;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.Tree_Menu_panel_animator.DefaultAnimation = animation4;
             // 
             // timer1
             // 
@@ -576,6 +538,22 @@
             // 
             this.timer2.Interval = 10;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.Gestion_des_stagiaires_tab);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.ItemSize = new System.Drawing.Size(200, 18);
+            this.tabControl1.Location = new System.Drawing.Point(257, 54);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(701, 575);
+            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl1.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -589,12 +567,24 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // Gestion_des_stagiaires_tab
+            // 
+            this.Tree_Menu_panel_animator.SetDecoration(this.Gestion_des_stagiaires_tab, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.Gestion_des_stagiaires_tab, BunifuAnimatorNS.DecorationType.None);
+            this.Gestion_des_stagiaires_tab.Location = new System.Drawing.Point(4, 22);
+            this.Gestion_des_stagiaires_tab.Name = "Gestion_des_stagiaires_tab";
+            this.Gestion_des_stagiaires_tab.Padding = new System.Windows.Forms.Padding(3);
+            this.Gestion_des_stagiaires_tab.Size = new System.Drawing.Size(693, 549);
+            this.Gestion_des_stagiaires_tab.TabIndex = 0;
+            this.Gestion_des_stagiaires_tab.Text = "Gestion Des Stagiaires";
+            this.Gestion_des_stagiaires_tab.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 629);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Tree_Menu_panel);
             this.Controls.Add(this.Header_Panel);
             this.logo_animator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
@@ -612,7 +602,6 @@
             this.Logo_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             this.Tree_Menu_panel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -641,11 +630,10 @@
         private BunifuAnimatorNS.BunifuTransition Tree_Menu_panel_animator;
         private BunifuAnimatorNS.BunifuTransition logo_animator;
         private Bunifu.Framework.UI.BunifuCustomLabel mini_logo;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage Gestion_des_stagiaires_tab;
         private System.Windows.Forms.TabPage tabPage2;
     }
 }
