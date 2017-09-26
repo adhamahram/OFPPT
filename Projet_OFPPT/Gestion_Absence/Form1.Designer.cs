@@ -344,7 +344,7 @@
             // btn_arch
             // 
             this.btn_arch.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(86)))));
-            this.btn_arch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(86)))));
+            this.btn_arch.BackColor = System.Drawing.Color.White;
             this.btn_arch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_arch.BorderRadius = 0;
             this.btn_arch.ButtonText = "        Archive";

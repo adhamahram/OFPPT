@@ -19,8 +19,8 @@ namespace Gestion_Absence
         int statu;
         private void Form1_Load(object sender, EventArgs e)
         {
-            mini_logo.Visible = false;
-            statu = 0;
+           mini_logo.Visible = false;
+           statu = 0;
             
         }
         private void Close_pictureBox_Click(object sender, EventArgs e)
