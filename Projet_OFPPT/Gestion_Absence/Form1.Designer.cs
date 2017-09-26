@@ -43,7 +43,6 @@
             this.Logo_Panel = new System.Windows.Forms.Panel();
             this.mini_logo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
-            this.Gap_panel = new System.Windows.Forms.Panel();
             this.Tree_Menu_panel = new System.Windows.Forms.Panel();
             this.btn_stat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_modul = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -107,7 +106,6 @@
             this.Header_Panel.Name = "Header_Panel";
             this.Header_Panel.Size = new System.Drawing.Size(958, 54);
             this.Header_Panel.TabIndex = 4;
-            this.Header_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Header_Panel_Paint);
             this.Header_Panel.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Header_Panel_MouseDoubleClick);
             // 
             // Minimise_pictureBox
@@ -213,16 +211,6 @@
             this.Logo_PictureBox.TabIndex = 0;
             this.Logo_PictureBox.TabStop = false;
             // 
-            // Gap_panel
-            // 
-            this.Tree_Menu_panel_animator.SetDecoration(this.Gap_panel, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.Gap_panel, BunifuAnimatorNS.DecorationType.None);
-            this.Gap_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Gap_panel.Location = new System.Drawing.Point(0, 212);
-            this.Gap_panel.Name = "Gap_panel";
-            this.Gap_panel.Size = new System.Drawing.Size(257, 10);
-            this.Gap_panel.TabIndex = 4;
-            // 
             // Tree_Menu_panel
             // 
             this.Tree_Menu_panel.BackColor = System.Drawing.Color.White;
@@ -232,7 +220,6 @@
             this.Tree_Menu_panel.Controls.Add(this.btn_arch);
             this.Tree_Menu_panel.Controls.Add(this.btn_group);
             this.Tree_Menu_panel.Controls.Add(this.btn_filieres);
-            this.Tree_Menu_panel.Controls.Add(this.Gap_panel);
             this.Tree_Menu_panel.Controls.Add(this.btn_abs);
             this.Tree_Menu_panel.Controls.Add(this.Logo_Panel);
             this.Tree_Menu_panel_animator.SetDecoration(this.Tree_Menu_panel, BunifuAnimatorNS.DecorationType.None);
@@ -267,20 +254,18 @@
             this.btn_stat.IconVisible = true;
             this.btn_stat.IconZoom = 60D;
             this.btn_stat.IsTab = false;
-            this.btn_stat.Location = new System.Drawing.Point(0, 218);
+            this.btn_stat.Location = new System.Drawing.Point(0, 212);
             this.btn_stat.Name = "btn_stat";
             this.btn_stat.Normalcolor = System.Drawing.Color.White;
             this.btn_stat.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_stat.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_stat.selected = false;
-            this.btn_stat.Size = new System.Drawing.Size(257, 48);
+            this.btn_stat.selected = true;
+            this.btn_stat.Size = new System.Drawing.Size(258, 48);
             this.btn_stat.TabIndex = 14;
             this.btn_stat.Text = "          Statistique";
             this.btn_stat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_stat.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
             this.btn_stat.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_stat.Click += new System.EventHandler(this.btn_stat_Click);
-            this.btn_stat.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_stat_MouseClick);
             // 
             // btn_modul
             // 
@@ -306,13 +291,13 @@
             this.btn_modul.IconVisible = true;
             this.btn_modul.IconZoom = 70D;
             this.btn_modul.IsTab = false;
-            this.btn_modul.Location = new System.Drawing.Point(3, 477);
+            this.btn_modul.Location = new System.Drawing.Point(0, 462);
             this.btn_modul.Name = "btn_modul";
             this.btn_modul.Normalcolor = System.Drawing.Color.White;
             this.btn_modul.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_modul.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_modul.selected = false;
-            this.btn_modul.Size = new System.Drawing.Size(257, 48);
+            this.btn_modul.selected = true;
+            this.btn_modul.Size = new System.Drawing.Size(258, 48);
             this.btn_modul.TabIndex = 11;
             this.btn_modul.Text = "        Modules";
             this.btn_modul.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -343,24 +328,23 @@
             this.btn_stagi.IconVisible = true;
             this.btn_stagi.IconZoom = 60D;
             this.btn_stagi.IsTab = false;
-            this.btn_stagi.Location = new System.Drawing.Point(0, 268);
+            this.btn_stagi.Location = new System.Drawing.Point(0, 262);
             this.btn_stagi.Name = "btn_stagi";
             this.btn_stagi.Normalcolor = System.Drawing.Color.White;
             this.btn_stagi.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_stagi.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_stagi.selected = false;
-            this.btn_stagi.Size = new System.Drawing.Size(257, 48);
+            this.btn_stagi.selected = true;
+            this.btn_stagi.Size = new System.Drawing.Size(258, 48);
             this.btn_stagi.TabIndex = 13;
             this.btn_stagi.Text = "          Stagiaires";
             this.btn_stagi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_stagi.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
             this.btn_stagi.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_stagi.Click += new System.EventHandler(this.btn_stagi_Click);
             // 
             // btn_arch
             // 
             this.btn_arch.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(86)))));
-            this.btn_arch.BackColor = System.Drawing.Color.White;
+            this.btn_arch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(86)))));
             this.btn_arch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_arch.BorderRadius = 0;
             this.btn_arch.ButtonText = "        Archive";
@@ -381,13 +365,13 @@
             this.btn_arch.IconVisible = true;
             this.btn_arch.IconZoom = 70D;
             this.btn_arch.IsTab = false;
-            this.btn_arch.Location = new System.Drawing.Point(3, 529);
+            this.btn_arch.Location = new System.Drawing.Point(0, 512);
             this.btn_arch.Name = "btn_arch";
             this.btn_arch.Normalcolor = System.Drawing.Color.White;
             this.btn_arch.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_arch.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_arch.selected = false;
-            this.btn_arch.Size = new System.Drawing.Size(257, 48);
+            this.btn_arch.selected = true;
+            this.btn_arch.Size = new System.Drawing.Size(258, 48);
             this.btn_arch.TabIndex = 12;
             this.btn_arch.Text = "        Archive";
             this.btn_arch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -418,13 +402,13 @@
             this.btn_group.IconVisible = true;
             this.btn_group.IconZoom = 70D;
             this.btn_group.IsTab = false;
-            this.btn_group.Location = new System.Drawing.Point(0, 425);
+            this.btn_group.Location = new System.Drawing.Point(0, 412);
             this.btn_group.Name = "btn_group";
             this.btn_group.Normalcolor = System.Drawing.Color.White;
             this.btn_group.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_group.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_group.selected = false;
-            this.btn_group.Size = new System.Drawing.Size(257, 48);
+            this.btn_group.selected = true;
+            this.btn_group.Size = new System.Drawing.Size(258, 48);
             this.btn_group.TabIndex = 10;
             this.btn_group.Text = "         Groupes";
             this.btn_group.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -455,13 +439,13 @@
             this.btn_filieres.IconVisible = true;
             this.btn_filieres.IconZoom = 70D;
             this.btn_filieres.IsTab = false;
-            this.btn_filieres.Location = new System.Drawing.Point(0, 373);
+            this.btn_filieres.Location = new System.Drawing.Point(0, 362);
             this.btn_filieres.Name = "btn_filieres";
             this.btn_filieres.Normalcolor = System.Drawing.Color.White;
             this.btn_filieres.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_filieres.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_filieres.selected = false;
-            this.btn_filieres.Size = new System.Drawing.Size(257, 48);
+            this.btn_filieres.selected = true;
+            this.btn_filieres.Size = new System.Drawing.Size(258, 48);
             this.btn_filieres.TabIndex = 9;
             this.btn_filieres.Text = "         Filières";
             this.btn_filieres.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -492,13 +476,13 @@
             this.btn_abs.IconVisible = true;
             this.btn_abs.IconZoom = 70D;
             this.btn_abs.IsTab = false;
-            this.btn_abs.Location = new System.Drawing.Point(0, 321);
+            this.btn_abs.Location = new System.Drawing.Point(0, 312);
             this.btn_abs.Name = "btn_abs";
             this.btn_abs.Normalcolor = System.Drawing.Color.White;
             this.btn_abs.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.btn_abs.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(56)))));
-            this.btn_abs.selected = false;
-            this.btn_abs.Size = new System.Drawing.Size(257, 48);
+            this.btn_abs.selected = true;
+            this.btn_abs.Size = new System.Drawing.Size(258, 48);
             this.btn_abs.TabIndex = 8;
             this.btn_abs.Text = "         Absence";
             this.btn_abs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -669,7 +653,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btn_arch;
         private Bunifu.Framework.UI.BunifuFlatButton btn_group;
         private Bunifu.Framework.UI.BunifuFlatButton btn_filieres;
-        private System.Windows.Forms.Panel Gap_panel;
         private Bunifu.Framework.UI.BunifuFlatButton btn_abs;
         private System.Windows.Forms.Panel Logo_Panel;
         private System.Windows.Forms.PictureBox Logo_PictureBox;

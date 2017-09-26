@@ -19,10 +19,8 @@ namespace Gestion_Absence
         int statu;
         private void Form1_Load(object sender, EventArgs e)
         {
-
-
-            //mini_lo
-            //statu = 0;
+            mini_logo.Visible = false;
+            statu = 0;
             
         }
         private void Close_pictureBox_Click(object sender, EventArgs e)
@@ -54,19 +52,6 @@ namespace Gestion_Absence
                 this.CenterToScreen();
                 statu = 0;
             }
-        }
-
-        private void btn_stagi_Click(object sender, EventArgs e)
-        {
-            btn_stat.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold);
-
-            
-            btn_stagi.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-            btn_abs.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-            btn_filieres.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-            btn_group.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-            btn_modul.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-            btn_arch.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
         }
 
         private void Humbutton_Click(object sender, EventArgs e)
@@ -144,27 +129,6 @@ namespace Gestion_Absence
             {
                 timer2.Stop();
             }
-        }
-
-        private void btn_stat_MouseClick(object sender, MouseEventArgs e)
-        {
-           
-        }
-
-        private void btn_stat_Click(object sender, EventArgs e)
-        {
-            btn_stat.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Bold);
-            btn_stagi.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-            btn_abs.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-            btn_filieres.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-            btn_group.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-            btn_modul.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-            btn_arch.Font = new Font("Microsoft Sans Serif", 9, FontStyle.Regular);
-        }
-
-        private void Header_Panel_Paint(object sender, PaintEventArgs e)
-        {
-            
         }
     }
 }
