@@ -20,6 +20,7 @@ namespace Gestion_Absence
         private void Form1_Load(object sender, EventArgs e)
         {
             tabControl1.ItemSize = new Size(tabControl1.Width / 2 -1, tabControl1.ItemSize.Height);
+
             mini_logo.Visible = false;
            statu = 0;
             
