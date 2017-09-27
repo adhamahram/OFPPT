@@ -535,6 +535,7 @@
             this.Gestion_des_stagiaires_tab.Size = new System.Drawing.Size(693, 549);
             this.Gestion_des_stagiaires_tab.TabIndex = 0;
             this.Gestion_des_stagiaires_tab.Text = "Gestion Des Stagiaires";
+            this.Gestion_des_stagiaires_tab.Click += new System.EventHandler(this.Gestion_des_stagiaires_tab_Click);
             // 
             // tabPage2
             // 

@@ -137,5 +137,10 @@ namespace Gestion_Absence
                 timer1.Stop();
             }
         }
+
+        private void Gestion_des_stagiaires_tab_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
