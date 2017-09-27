@@ -41,8 +41,8 @@
             this.Humbutton = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Logo_Panel = new System.Windows.Forms.Panel();
-            this.mini_logo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
+            this.mini_logo = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Tree_Menu_panel = new System.Windows.Forms.Panel();
             this.btn_stat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_modul = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -52,12 +52,12 @@
             this.btn_filieres = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_abs = new Bunifu.Framework.UI.BunifuFlatButton();
             this.logo_animator = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Gestion_des_stagiaires_tab = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Tree_Menu_panel_animator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.Gestion_des_stagiaires_tab = new System.Windows.Forms.TabPage();
             this.Header_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).BeginInit();
@@ -180,6 +180,20 @@
             this.Logo_Panel.Size = new System.Drawing.Size(257, 212);
             this.Logo_Panel.TabIndex = 0;
             // 
+            // Logo_PictureBox
+            // 
+            this.logo_animator.SetDecoration(this.Logo_PictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Tree_Menu_panel_animator.SetDecoration(this.Logo_PictureBox, BunifuAnimatorNS.DecorationType.None);
+            this.Logo_PictureBox.ErrorImage = null;
+            this.Logo_PictureBox.Image = global::Gestion_Absence.Properties.Resources.OFPPT;
+            this.Logo_PictureBox.InitialImage = null;
+            this.Logo_PictureBox.Location = new System.Drawing.Point(17, 34);
+            this.Logo_PictureBox.Name = "Logo_PictureBox";
+            this.Logo_PictureBox.Size = new System.Drawing.Size(227, 123);
+            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo_PictureBox.TabIndex = 0;
+            this.Logo_PictureBox.TabStop = false;
+            // 
             // mini_logo
             // 
             this.mini_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -194,20 +208,6 @@
             this.mini_logo.TabIndex = 6;
             this.mini_logo.Text = "OFPPT";
             this.mini_logo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // Logo_PictureBox
-            // 
-            this.logo_animator.SetDecoration(this.Logo_PictureBox, BunifuAnimatorNS.DecorationType.None);
-            this.Tree_Menu_panel_animator.SetDecoration(this.Logo_PictureBox, BunifuAnimatorNS.DecorationType.None);
-            this.Logo_PictureBox.ErrorImage = null;
-            this.Logo_PictureBox.Image = global::Gestion_Absence.Properties.Resources.OFPPT;
-            this.Logo_PictureBox.InitialImage = null;
-            this.Logo_PictureBox.Location = new System.Drawing.Point(17, 34);
-            this.Logo_PictureBox.Name = "Logo_PictureBox";
-            this.Logo_PictureBox.Size = new System.Drawing.Size(227, 123);
-            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo_PictureBox.TabIndex = 0;
-            this.Logo_PictureBox.TabStop = false;
             // 
             // Tree_Menu_panel
             // 
@@ -508,6 +508,46 @@
             animation2.TransparencyCoeff = 0F;
             this.logo_animator.DefaultAnimation = animation2;
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.Gestion_des_stagiaires_tab);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.ItemSize = new System.Drawing.Size(200, 18);
+            this.tabControl1.Location = new System.Drawing.Point(257, 54);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(701, 575);
+            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl1.TabIndex = 0;
+            // 
+            // Gestion_des_stagiaires_tab
+            // 
+            this.Gestion_des_stagiaires_tab.BackColor = System.Drawing.Color.Gainsboro;
+            this.Tree_Menu_panel_animator.SetDecoration(this.Gestion_des_stagiaires_tab, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.Gestion_des_stagiaires_tab, BunifuAnimatorNS.DecorationType.None);
+            this.Gestion_des_stagiaires_tab.Location = new System.Drawing.Point(4, 22);
+            this.Gestion_des_stagiaires_tab.Name = "Gestion_des_stagiaires_tab";
+            this.Gestion_des_stagiaires_tab.Padding = new System.Windows.Forms.Padding(3);
+            this.Gestion_des_stagiaires_tab.Size = new System.Drawing.Size(693, 549);
+            this.Gestion_des_stagiaires_tab.TabIndex = 0;
+            this.Gestion_des_stagiaires_tab.Text = "Gestion Des Stagiaires";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.Gainsboro;
+            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
+            this.logo_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(693, 549);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Chercher Un Stagiaire";
+            // 
             // Tree_Menu_panel_animator
             // 
             this.Tree_Menu_panel_animator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
@@ -538,46 +578,6 @@
             // 
             this.timer2.Interval = 10;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.Gestion_des_stagiaires_tab);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.ItemSize = new System.Drawing.Size(200, 18);
-            this.tabControl1.Location = new System.Drawing.Point(257, 54);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(701, 575);
-            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl1.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.Gainsboro;
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(693, 549);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Chercher Un Stagiaire";
-            // 
-            // Gestion_des_stagiaires_tab
-            // 
-            this.Gestion_des_stagiaires_tab.BackColor = System.Drawing.Color.Gainsboro;
-            this.Tree_Menu_panel_animator.SetDecoration(this.Gestion_des_stagiaires_tab, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.Gestion_des_stagiaires_tab, BunifuAnimatorNS.DecorationType.None);
-            this.Gestion_des_stagiaires_tab.Location = new System.Drawing.Point(4, 22);
-            this.Gestion_des_stagiaires_tab.Name = "Gestion_des_stagiaires_tab";
-            this.Gestion_des_stagiaires_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Gestion_des_stagiaires_tab.Size = new System.Drawing.Size(693, 549);
-            this.Gestion_des_stagiaires_tab.TabIndex = 0;
-            this.Gestion_des_stagiaires_tab.Text = "Gestion Des Stagiaires";
             // 
             // Form1
             // 
