@@ -40,7 +40,8 @@ create table Absences(
 	Justification	bit,
 	descriptions	varchar(255),
 	Date_abs		date,
-	Duree_abs		int,
+	Duree_abs		int,--heur debut-heur fin 
+	
 	modules			int foreign key references Modules(Id_module),
 	Stagiaire		varchar(255) foreign key references Stagiaires(Id_Cin),
 )

@@ -20,7 +20,7 @@ namespace Gestion_Absence
         private void Form1_Load(object sender, EventArgs e)
         {
             tabControl1.ItemSize = new Size(tabControl1.Width / 2 -1, tabControl1.ItemSize.Height);
-
+            tabControl1.Visible = false;
             mini_logo.Visible = false;
            statu = 0;
             
@@ -137,10 +137,21 @@ namespace Gestion_Absence
                 timer1.Stop();
             }
         }
+        
 
         private void Gestion_des_stagiaires_tab_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_stat_Click(object sender, EventArgs e)
+        {
+            tabControl1.Visible = true;
+        }
+
+        private void btn_stagi_Click(object sender, EventArgs e)
+        {
+            tabControl1.Visible = false;
         }
     }
 }
