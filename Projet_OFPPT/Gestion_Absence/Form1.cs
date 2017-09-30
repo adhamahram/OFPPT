@@ -117,7 +117,7 @@ namespace Gestion_Absence
         {
             if (Tree_Menu_panel.Width < 256)
             {
-                Tree_Menu_panel.Width += 20;
+                Tree_Menu_panel.Width += 30;
                 timer2.Start();
                 gestion_stagiaires1.tabControl1.ItemSize = new Size(gestion_stagiaires1.tabControl1.Width / 2 - 1, gestion_stagiaires1.tabControl1.ItemSize.Height);
             }
@@ -130,7 +130,7 @@ namespace Gestion_Absence
         {
             if (Tree_Menu_panel.Width > 63)
             {
-                Tree_Menu_panel.Width -= 20;
+                Tree_Menu_panel.Width -= 30;
                 gestion_stagiaires1.tabControl1.ItemSize = new Size(gestion_stagiaires1.tabControl1.Width / 2 - 1, gestion_stagiaires1.tabControl1.ItemSize.Height);
                 timer1.Start();
             }
