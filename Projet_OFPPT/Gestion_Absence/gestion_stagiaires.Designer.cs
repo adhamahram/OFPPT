@@ -1,6 +1,6 @@
 ﻿namespace Gestion_Absence
 {
-    partial class gestion_stagiaires
+    partial class Gestion_Stagiaires
     {
         /// <summary> 
         /// Required designer variable.

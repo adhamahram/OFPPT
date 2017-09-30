@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestion_Absence
 {
-    public partial class gestion_stagiaires : UserControl
+    public partial class Gestion_Stagiaires : UserControl
     {
-        public gestion_stagiaires()
+        public Gestion_Stagiaires()
         {
             InitializeComponent();
         }
