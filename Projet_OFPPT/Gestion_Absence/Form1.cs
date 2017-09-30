@@ -20,9 +20,9 @@ namespace Gestion_Absence
         private void Form1_Load(object sender, EventArgs e)
         {
             tabControl1.ItemSize = new Size(tabControl1.Width / 2 -1, tabControl1.ItemSize.Height);
-
+            
             mini_logo.Visible = false;
-           //statu = 0;
+            statu = 0;
             
         }
         private void Close_pictureBox_Click(object sender, EventArgs e)
@@ -116,8 +116,8 @@ namespace Gestion_Absence
             if (Tree_Menu_panel.Width < 256)
             {
                 Tree_Menu_panel.Width += 20;
-                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
                 timer2.Start();
+                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
             }
             else
             {
@@ -136,6 +136,22 @@ namespace Gestion_Absence
             {
                 timer1.Stop();
             }
+        }
+        
+
+        private void Gestion_des_stagiaires_tab_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_stat_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_stagi_Click(object sender, EventArgs e)
+        {
+            tabControl1.Visible = true;
         }
     }
 }

@@ -34,8 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\PROJECT OFPPT\InnerVisual-Bunifu_UI_v1.5.3 Crack\Bunifu_UI_v1.5.3.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Excel.4.5">
       <HintPath>Properties\Excel.4.5.dll</HintPath>
