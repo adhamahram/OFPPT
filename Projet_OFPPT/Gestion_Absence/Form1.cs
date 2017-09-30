@@ -153,5 +153,10 @@ namespace Gestion_Absence
         {
             tabControl1.Visible = true;
         }
+
+        private void Header_Panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
