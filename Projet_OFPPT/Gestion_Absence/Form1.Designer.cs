@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Title_Lable = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Header_Panel = new System.Windows.Forms.Panel();
@@ -52,12 +52,10 @@
             this.btn_filieres = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_abs = new Bunifu.Framework.UI.BunifuFlatButton();
             this.logo_animator = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.Gestion_des_stagiaires_tab = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Tree_Menu_panel_animator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.gestion_stagiaires1 = new Gestion_Absence.gestion_stagiaires();
             this.Header_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimise_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximise_pictureBox)).BeginInit();
@@ -66,7 +64,6 @@
             this.Logo_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             this.Tree_Menu_panel.SuspendLayout();
-            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -494,83 +491,43 @@
             // 
             this.logo_animator.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate;
             this.logo_animator.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(30);
-            animation2.RotateCoeff = 0.5F;
-            animation2.RotateLimit = 0.2F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.logo_animator.DefaultAnimation = animation2;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.Gestion_des_stagiaires_tab);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabControl1, BunifuAnimatorNS.DecorationType.None);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.ItemSize = new System.Drawing.Size(200, 18);
-            this.tabControl1.Location = new System.Drawing.Point(257, 54);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(701, 575);
-            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl1.TabIndex = 0;
-            // 
-            // Gestion_des_stagiaires_tab
-            // 
-            this.Gestion_des_stagiaires_tab.BackColor = System.Drawing.Color.Gainsboro;
-            this.Tree_Menu_panel_animator.SetDecoration(this.Gestion_des_stagiaires_tab, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.Gestion_des_stagiaires_tab, BunifuAnimatorNS.DecorationType.None);
-            this.Gestion_des_stagiaires_tab.Location = new System.Drawing.Point(4, 22);
-            this.Gestion_des_stagiaires_tab.Name = "Gestion_des_stagiaires_tab";
-            this.Gestion_des_stagiaires_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Gestion_des_stagiaires_tab.Size = new System.Drawing.Size(693, 549);
-            this.Gestion_des_stagiaires_tab.TabIndex = 0;
-            this.Gestion_des_stagiaires_tab.Text = "Gestion Des Stagiaires";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.Gainsboro;
-            this.Tree_Menu_panel_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
-            this.logo_animator.SetDecoration(this.tabPage2, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(693, 549);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Chercher Un Stagiaire";
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(30);
+            animation3.RotateCoeff = 0.5F;
+            animation3.RotateLimit = 0.2F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.logo_animator.DefaultAnimation = animation3;
             // 
             // Tree_Menu_panel_animator
             // 
             this.Tree_Menu_panel_animator.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.Tree_Menu_panel_animator.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.Tree_Menu_panel_animator.DefaultAnimation = animation1;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.Tree_Menu_panel_animator.DefaultAnimation = animation4;
             // 
             // timer1
             // 
@@ -582,12 +539,22 @@
             this.timer2.Interval = 10;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // gestion_stagiaires1
+            // 
+            this.logo_animator.SetDecoration(this.gestion_stagiaires1, BunifuAnimatorNS.DecorationType.None);
+            this.Tree_Menu_panel_animator.SetDecoration(this.gestion_stagiaires1, BunifuAnimatorNS.DecorationType.None);
+            this.gestion_stagiaires1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gestion_stagiaires1.Location = new System.Drawing.Point(257, 54);
+            this.gestion_stagiaires1.Name = "gestion_stagiaires1";
+            this.gestion_stagiaires1.Size = new System.Drawing.Size(701, 575);
+            this.gestion_stagiaires1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 629);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.gestion_stagiaires1);
             this.Controls.Add(this.Tree_Menu_panel);
             this.Controls.Add(this.Header_Panel);
             this.logo_animator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
@@ -605,7 +572,6 @@
             this.Logo_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             this.Tree_Menu_panel.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -635,9 +601,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel mini_logo;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage Gestion_des_stagiaires_tab;
-        private System.Windows.Forms.TabPage tabPage2;
+        private gestion_stagiaires gestion_stagiaires1;
     }
 }
 

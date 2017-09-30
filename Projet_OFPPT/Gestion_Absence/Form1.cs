@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Gestion_Absence
 {
     public partial class Form1 : Form
@@ -19,7 +20,7 @@ namespace Gestion_Absence
         int statu;
         private void Form1_Load(object sender, EventArgs e)
         {
-            tabControl1.ItemSize = new Size(tabControl1.Width / 2 -1, tabControl1.ItemSize.Height);
+            gestion_stagiaires1.tabControl1.ItemSize = new Size(gestion_stagiaires1.tabControl1.Width / 2 -1, gestion_stagiaires1.tabControl1.ItemSize.Height);
             
             mini_logo.Visible = false;
             statu = 0;
@@ -42,7 +43,7 @@ namespace Gestion_Absence
                 Maximise_pictureBox.Location = new Point(Maximise_pictureBox.Location.X + 410, Maximise_pictureBox.Location.Y);
                 Close_pictureBox.Location = new Point(Close_pictureBox.Location.X + 410, Close_pictureBox.Location.Y);
                 Minimise_pictureBox.Location = new Point(Minimise_pictureBox.Location.X + 410, Minimise_pictureBox.Location.Y);
-                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
+                gestion_stagiaires1.tabControl1.ItemSize = new Size(gestion_stagiaires1.tabControl1.Width / 2 - 1, gestion_stagiaires1.tabControl1.ItemSize.Height);
             }
             else
             {
@@ -52,7 +53,8 @@ namespace Gestion_Absence
                 this.Width = 958;
                 this.Height = 631;
                 this.CenterToScreen();
-                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
+                gestion_stagiaires1.tabControl1.ItemSize = new Size(gestion_stagiaires1.tabControl1.Width / 2 - 1, gestion_stagiaires1.tabControl1.ItemSize.Height);
+                
                 statu = 0;
             }
         }
@@ -89,7 +91,7 @@ namespace Gestion_Absence
                 Maximise_pictureBox.Location = new Point(Maximise_pictureBox.Location.X + 410, Maximise_pictureBox.Location.Y);
                 Close_pictureBox.Location = new Point(Close_pictureBox.Location.X + 410, Close_pictureBox.Location.Y);
                 Minimise_pictureBox.Location = new Point(Minimise_pictureBox.Location.X + 410, Minimise_pictureBox.Location.Y);
-                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
+                gestion_stagiaires1.tabControl1.ItemSize = new Size(gestion_stagiaires1.tabControl1.Width / 2 - 1, gestion_stagiaires1.tabControl1.ItemSize.Height);
             }
             else
             {
@@ -99,7 +101,7 @@ namespace Gestion_Absence
                 this.Width = 958;
                 this.Height = 631;
                 this.CenterToScreen();
-                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
+                gestion_stagiaires1.tabControl1.ItemSize = new Size(gestion_stagiaires1.tabControl1.Width / 2 - 1, gestion_stagiaires1.tabControl1.ItemSize.Height);
 
                 statu = 0;
             }
@@ -117,7 +119,7 @@ namespace Gestion_Absence
             {
                 Tree_Menu_panel.Width += 20;
                 timer2.Start();
-                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
+                gestion_stagiaires1.tabControl1.ItemSize = new Size(gestion_stagiaires1.tabControl1.Width / 2 - 1, gestion_stagiaires1.tabControl1.ItemSize.Height);
             }
             else
             {
@@ -129,7 +131,7 @@ namespace Gestion_Absence
             if (Tree_Menu_panel.Width > 63)
             {
                 Tree_Menu_panel.Width -= 20;
-                tabControl1.ItemSize = new Size(tabControl1.Width / 2 - 1, tabControl1.ItemSize.Height);
+                gestion_stagiaires1.tabControl1.ItemSize = new Size(gestion_stagiaires1.tabControl1.Width / 2 - 1, gestion_stagiaires1.tabControl1.ItemSize.Height);
                 timer1.Start();
             }
             else
@@ -151,7 +153,7 @@ namespace Gestion_Absence
 
         private void btn_stagi_Click(object sender, EventArgs e)
         {
-            tabControl1.Visible = true;
+            
         }
 
         private void Header_Panel_Paint(object sender, PaintEventArgs e)

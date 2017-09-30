@@ -10,11 +10,48 @@ using System.Windows.Forms;
 
 namespace Gestion_Absence
 {
-    public partial class Gestion_Stagiaires : UserControl
+    public partial class gestion_stagiaires : UserControl
     {
-        public Gestion_Stagiaires()
+        public gestion_stagiaires()
         {
             InitializeComponent();
+        }
+
+        private void Gestion_des_stagiaires_tab_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                groupBox2.Enabled = true;
+                groupBox1.Enabled = false;
+            }else if (radioButton2.Checked)
+            {
+                groupBox2.Enabled = false;
+                groupBox1.Enabled = true;
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                groupBox2.Enabled = true;
+                groupBox1.Enabled = false;
+            }
+            else if (radioButton2.Checked)
+            {
+                groupBox2.Enabled = false;
+                groupBox1.Enabled = true;
+            }
         }
     }
 }
